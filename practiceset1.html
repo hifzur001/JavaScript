@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Practice Set 01</title>
+		<style>
+			body {
+				font-family: Lato, sans-serif;
+				text-transform: capitalize;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Hello welcome to practice set</h1>
+		<script>
+			"use strict";
+			console.log("Hello");
+
+			// Create a varibale of type string and try to a number to it.
+
+			// Q-1
+
+			const a = "Google";
+			const b = 10;
+			console.log("====================================");
+			console.log(a + b);
+			console.log("====================================");
+
+			// Q-2
+
+			// find thr data type of above question
+
+			console.log(typeof (a + b));
+
+			// Q-3
+
+			// Add a key to in an object
+
+			const a1 = {
+				name: "Hello",
+				age: 25,
+				isAddress: false
+			};
+			console.log("====================================");
+			console.log(a1);
+			console.log("====================================");
+			a1["Sibling"] = "World"; // Added a new key to in an object
+			a1["name"] = "Google Pixel";
+			console.log("====================================");
+			console.log(a1);
+			console.log("====================================");
+
+			// Q-5
+
+			// write a js program to create 5 word meanings dictionary of words
+
+			const dictionary = {
+				clarsach: "an ancient Irish and Scottish harp.",
+				pluvial: "relating to rain, especially much rain",
+				futtock:
+					"any of a number of timbers forming the lower, more curved portion of the frame in a wooden hull.",
+				zabuton:
+					"a large, flat cushion, used in Japan for sitting or kneeling on the floor.",
+				solemnize: "to observe or commemorate with rites or ceremonies"
+			};
+			console.log("====================================");
+			console.log(dictionary);
+			console.log(dictionary.clarsach);
+			console.log(dictionary.futtock);
+			console.log(dictionary.zabuton);
+			console.log(dictionary["clarsach"]);
+			console.log("====================================");
+		</script>
+	</body>
+</html>

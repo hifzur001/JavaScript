@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Logical Operators</title>
+	</head>
+	<body>
+		<h1>Hello Logical Operators</h1>
+		<script>
+			"use strict";
+			console.log("Hello There");
+
+			/* In classical programming, the logical OR is meant to manipulate boolean values only. If any of its arguments are true, it returns true, otherwise it returns false.
+            In JavaScript, the operator is a little bit trickier and more powerful. But first, let’s see what happens with boolean values. */
+
+			console.log(true || true); // true
+			console.log(true || false); // true
+			console.log(false || false); // false
+			console.log(false || true); // true
+
+			const hour = 9;
+			if (hour < 10 || hour > 18) {
+				console.log("Office is closed");
+			}
+			const hours = 12;
+			let isWeekend = true;
+			if (hour < 10 || hour > 18 || isWeekend) {
+				console.log("====================================");
+				console.log("The office is closed.");
+			}
+
+			// Question 1: Write a JavaScript function that takes a number as input and determines whether it is between 10 and 20 (inclusive).
+
+			const checkNumberRange = (number) => {
+				if (number >= 10 && number <= 20) {
+					return "Number is between 10 and 20 (Inclusive)";
+				} else {
+					return "Number is not between 10 and 20 (Inclusive)";
+				}
+			};
+			console.log(checkNumberRange(15));
+			console.log(checkNumberRange(3));
+			console.log(checkNumberRange(97));
+
+			// Question 2: Write a JavaScript function that takes two boolean values as input and returns the logical AND of the two values.
+
+			const checkLogical = (val1, val2) => {
+				return val1 && val2;
+			};
+			console.log(checkLogical(true, false));
+			console.log(checkLogical(true, true));
+			console.log(checkLogical(false, true));
+			console.log(checkLogical(false, false));
+
+			// Write a JavaScript function that takes a string as input and determines whether it contains the substring "apple" or "banana".
+
+			const checkStringSubString = (string) => {
+				if (string.includes("Apple") || string.includes("Banana")) {
+					return "String Contains 'Apple' and 'Banana'";
+				} else {
+					return "String does not contain 'Apple' and 'Banana'";
+				}
+			};
+			console.table(checkStringSubString("I love Apples"));
+			console.table(checkStringSubString("I love to make smoothy of banana"));
+
+			// Question 4: Write a JavaScript function that takes a number as input and determines whether it is divisible by both 3 and 5.
+
+			const checkDivision = (number) => {
+				if (number % 3 == 0 || number % 5 === 0) {
+					return "Yes Number is Divisible by 3 or 5";
+				} else {
+					return "Not Divisible by 3 or 5";
+				}
+			};
+			console.log(checkDivision(15));
+			console.log(checkDivision(7));
+
+			// Question 5: Write a JavaScript function that takes two strings as input and determines whether they have the same length or both start with the letter "A".
+
+			function checkStrings(input1, input2) {
+				if (
+					input1.length === input2.length ||
+					(input1.charAt(0) === "A" && input2.charAt(0) === "A")
+				) {
+					return "Strings have the same length or both start with 'A'";
+				} else {
+					return "Strings do not have the same length or start with 'A'";
+				}
+			}
+
+			console.log(checkStrings("apple", "orange")); // Output: Strings have the same length or both start with 'A'
+			console.log(checkStrings("apple", "avocado")); // Output: Strings have the same length or both start with 'A'
+			console.log(checkStrings("banana", "orange")); // Output: Strings do not have the same length or start with 'A'
+		</script>
+	</body>
+</html>

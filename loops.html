@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Loops</title>
+	</head>
+	<body>
+		<h1>Hello welcome to Loops</h1>
+		<!-- 
+            for (initialization, condition, increment/decrement){
+                // code goes here
+            }
+         -->
+
+		<!--for Loop : most common loops in js. it allows you to loop through an array or perform a
+        set of instructions a specific number of times
+        -->
+		<script>
+			"use strict";
+			// Example of for loop
+			for (let i = 0; i <= 5; i++) {
+				console.table(i);
+			}
+
+			// Example of for in loop
+
+			/* This loop is used to iterate over the properties of an object */
+
+			const obj = {
+				name: "Hifzur Rahman",
+				age: 24,
+				place: "India"
+			};
+			for (let key in obj) {
+				console.table(key + ":" + obj[key]);
+			}
+
+			// Example of for of loop
+
+			/* this loop is used to iterate over the values of an iterateable object
+            such as array or a string
+            */
+
+			let arr = [12, 11, 15, 38, 25, 28];
+
+			for (let e of arr) {
+				console.log(e * 12);
+			}
+		</script>
+	</body>
+</html>

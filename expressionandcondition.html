@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Expression and condition</title>
+	</head>
+	<body>
+		<script>
+			"use strict";
+			console.log("Hello There");
+
+			// Conditional statements are used for make decisions based on different conditions. By default , statements in JavaScript script executed sequentially from top to bottom. If the processing logic require so, the sequential flow of execution can be altered in two ways:
+			/* 			if
+            if else
+            if else if else
+            switch
+            ternary operator */
+
+			// Syntax
+			/* 2005 */
+			/* 	const year = prompt(
+				"In which year indian cricket have won the world cup?",
+				""
+			);
+			if (year == 2007) {
+				alert("Yes! You are Right");
+				console.log(year);
+			} else {
+				alert("You're Wrong");
+			} */
+
+			const num = 3;
+			if (num < 0) {
+				console.log(`${num} is a positive number`);
+			}
+
+			const isThunderstorm = true;
+			if (isThunderstorm) {
+				alert("Stay safe in home");
+			}
+
+			// The if statement may contain an optional else block. It executes when the condition is falsy.
+			const years = prompt(
+				"In which year ECMAScript- 2015 specification published",
+				""
+			);
+			if (years == 2015) {
+				alert("Yes! You Guess it Right");
+			} else {
+				alert("You answered wrong");
+			}
+
+			// Sometimes, we’d like to test several variants of a condition. The else if clause lets us do that.
+			let yearss = prompt(
+				"In which year ECMAScript- 2015 specification published",
+				""
+			);
+			if (yearss < 2015) {
+				alert("TOO Early");
+			} else if (yearss > 2015) {
+				alert("Too Late");
+			} else {
+				alert("Exactly");
+			}
+
+			// Question 1: Write a JavaScript function that takes an integer as input and returns "Even" if the number is even, and "Odd" if the number is odd.
+
+			const checkEvenOdd = (number) => {
+				if (number % 2 == 0) {
+					return "Even";
+				} else {
+					return "False";
+				}
+			};
+			console.table(checkEvenOdd(10));
+			console.table(checkEvenOdd(3));
+		</script>
+	</body>
+</html>

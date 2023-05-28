@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Practice Set Based on If Else</title>
+	</head>
+	<body>
+		<h1>Hello There welcome to our practice set</h1>
+
+		<script>
+			"use strict";
+			console.log("====================================");
+			console.log("Starting");
+			console.log("====================================");
+
+			//Question 1: Write a JavaScript function that takes an integer as input and returns "Even" if the number is even, and "Odd" if the number is odd.
+
+			const checkEvenOdd = (number) => {
+				if (number % 2 === 0) {
+					return "Even";
+				} else {
+					return "Odd";
+				}
+			};
+			console.table(checkEvenOdd(12));
+			console.table(checkEvenOdd(5));
+
+			// Question 2: Write a JavaScript function that takes three numbers as input and returns the largest number among them.
+
+			const findLargestNumber = (a, b, c) => {
+				if (a >= b && a >= c) {
+					return a;
+				} else if (b >= a && b <= c) {
+					return b;
+				} else {
+					return c;
+				}
+			};
+			console.table(findLargestNumber(15, 36, 61));
+			console.table(findLargestNumber(1525552, 2511512121, 6565622));
+
+			// Question 3: Write a JavaScript function that takes a string as input and returns "Long" if the length of the string is greater than 5 characters, and "Short" otherwise.
+
+			const checkStringLength = (string) => {
+				if (string.length > 5) {
+					return "Long";
+				} else {
+					return "Short";
+				}
+			};
+			console.table(checkStringLength("Hello World")); // long
+			console.table(checkStringLength("ECMA")); // short
+
+			// Question 4: Write a JavaScript function that takes a number as input and returns "Positive" if the number is positive, "Negative" if the number is negative, and "Zero" if the number is equal to zero.
+
+			const checkPositiveNegative = (number) => {
+				if (number > 0) {
+					return "Positive";
+				} else if (number < 0) {
+					return "Negative";
+				} else {
+					return "Zero";
+				}
+			};
+			console.table(checkPositiveNegative(5));
+			console.table(checkPositiveNegative(-4));
+			console.table(checkPositiveNegative(0));
+
+			// Question 5: Write a JavaScript function that takes two numbers as input and returns "Equal" if the numbers are equal, "Greater" if the first number is greater than the second number, and "Smaller" if the first number is smaller than the second number.
+
+			const checkEqualGreater = (num1, num2) => {
+				if (num1 == num2) {
+					return "Equal";
+				} else if (num1 >= num2) {
+					return "Greater";
+				} else {
+					return "Smaller";
+				}
+			};
+
+			console.table(checkEqualGreater(10, 25));
+			console.table(checkEqualGreater(10, 10));
+			console.table(checkEqualGreater(25, 10));
+
+			// Question 6: Write a JavaScript function that takes a year as input and determines whether it is a leap year or not. (A leap year is divisible by 4, but not divisible by 100 unless it is also divisible by 400.)
+
+			const leapYear = (year) => {
+				if (year % 4 == 0) {
+					return "Leap Year";
+				} else {
+					return "Not leap Year";
+				}
+			};
+			console.table(leapYear(2012));
+
+			// Q-7 Write a JavaScript function that takes three angles (in degrees) of a triangle as input and determines whether the triangle is valid or not. (A valid triangle has the sum of its angles equal to 180 degrees.)
+
+			const checkTriangleEligibility = (angle1, angle2, angle3) => {
+				if (angle1 + angle2 + angle3 === 180) {
+					return "Valid Triangle";
+				} else {
+					return "Invalid Triangle";
+				}
+			};
+			console.table(checkTriangleEligibility(60, 60, 60));
+			console.table(checkTriangleEligibility(90, 60, 20));
+
+			// Q-8 Write a JavaScript function that takes a string as input and determines whether it starts with an uppercase letter or not.
+
+			function checkUppercase(string) {
+				var firstChar = string.charAt(0);
+
+				if (firstChar === firstChar.toUpperCase()) {
+					return "Starts with an uppercase letter";
+				} else {
+					return "Does not start with an uppercase letter";
+				}
+			}
+			console.log(checkUppercase("Hello")); // Output: Starts with an uppercase letter
+			console.log(checkUppercase("javascript")); // Output: Does not start with an uppercase letter
+			console.log(checkUppercase("OpenAI")); // Output: Starts with an uppercase letter
+		</script>
+	</body>
+</html>
